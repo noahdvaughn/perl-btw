@@ -1,3 +1,6 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 
-print "Hello, world\n";
+$message = 'Hello, world';
+
+print "$message\n";
+
