@@ -18,7 +18,7 @@ Example of hash: $hash{'name'}
 EOF
 
 # no functions here only subroutines
-sub testSubroutine{
+sub TestSubroutine{
   print "$var\n";
 }
 
@@ -28,4 +28,9 @@ TestSubroutine();
 
 ($scalar > 2) ? print "Thats a big scalar\n" : print "Thats a little scalar\n";
 
+#ref in perl is a pointer
 $scalarreference = \$scalar;
+
+open(DATA, ">file.txt") or die "Couldn't open file file.txt, $!";
+print DATA "epic";
+close(DATA);
