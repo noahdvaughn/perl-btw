@@ -13,7 +13,13 @@ Example of scalar: $scalar
 Example of array: @array
 Example of hash: $hash{'name'}
 EOF
-print "$var\n";
 
 
+sub testSubroutine{
+  print "$var\n";
+}
+
+testSubroutine();
+
+($scalar > 2) ? print "Thats a big scalar\n" : print "Thats a little scalar\n";
 
